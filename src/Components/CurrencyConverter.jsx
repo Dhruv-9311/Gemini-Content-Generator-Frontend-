@@ -9,7 +9,7 @@ const CurrencyConverter = () => {
   
   
   const convertHandler = () => {
-    fetch("http://localhost:3000/api/convert",{
+    fetch("https://currency-converter-9wy0.onrender.com//api/convert",{
       method:"POST",
       headers: {
         "Content-Type": "application/json",
