@@ -40,7 +40,7 @@ const Chat = () => {
     setLoading(true);
     setError(null);
     
-    const url = id ? `http://localhost:3000/api/conversation/${id}` : "http://localhost:3000/api/conversation";
+    const url = id ? `https://gemini-content-generator-backend.vercel.app/api/conversation/${id}` : "https://gemini-content-generator-backend.vercel.app/api/conversation";
     const method = id ? "PUT" : "POST";
     
     try {

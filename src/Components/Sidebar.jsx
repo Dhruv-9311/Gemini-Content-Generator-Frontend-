@@ -17,7 +17,7 @@ const Sidebar = () => {
     
     if (window.confirm('Are you sure you want to delete this conversation?')) {
       try {
-        const response = await fetch(`http://localhost:3000/api/conversation/${chatId}`, {
+        const response = await fetch(`https://gemini-content-generator-backend.vercel.app/api/conversation/${chatId}`, {
           method: 'DELETE',
         });
         

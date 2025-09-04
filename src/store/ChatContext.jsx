@@ -11,7 +11,7 @@ export const ChatProvider = ({children}) => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:3000/api/conversation", {
+    fetch("https://gemini-content-generator-backend.vercel.app/api/conversation", {
       method: "GET",
     })
     .then((res) => res.json())
