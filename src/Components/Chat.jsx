@@ -51,7 +51,7 @@ const Chat = () => {
         },
         body: JSON.stringify({
           prompt: messageRef.current.value,
-          model: modelRef.current.value,
+          model: modelRef.current?.value || 'gemini-1.5-flash-8b',
         }),
       });
       
